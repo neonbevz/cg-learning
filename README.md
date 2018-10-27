@@ -3,7 +3,7 @@
 Basic classes in different languages to help in learning the bases of computer graphics
 
 ## Currently implemented:
-###C\#:
+### C\#:
 - [x] Base colors
 - [x] Screen with methods
 - [x] Line rasterization algorithm
