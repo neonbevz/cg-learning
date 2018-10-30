@@ -1,4 +1,4 @@
-public class RGB
+public class RGB : IColor
 {
     public int byteR { get; private set; }
     public int byteG { get; private set; }
@@ -70,5 +70,10 @@ public class RGB
             floatValues1[0] * floatValues2[0], 
             floatValues1[1] * floatValues2[1], 
             floatValues1[2] * floatValues2[2]);
+    }
+
+    public byte GetOneByteColor()
+    {
+        return (byte) CGMath.Clamp((byteR + byteG + byteB) / 3 , 0, 255);
     }
 } 
